@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>B</title>
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="javascripts/main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <!--  Hide Apple  toolbar -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <div id="container">
+
+      <div class="welcome-screen">
+        <img src="images/welcome-screen.png" />
+        <input class="button welcome-screen" type="button" value="Turpināt" />
+      </div>
+
+      <div class="instructions">
+        <img src="images/instructions.png" />
+        <input class="button instructions" type="button" value="Turpināt" />
+      </div>
+
+      <div class="lobby">
+        <div class="joined not-enough">
+          <span class="now">0</span> no <span class="limit">0</span>
+        </div>
+        <img src="images/lobby.png" />
+        <input class="button not-centered join" type="button" value="Pievienoties" title="230" />
+        <input class="button not-centered play" type="button" value="Spēlēt" title="230" />
+      </div>
+
+      <div class="game">
+        <div class="game-info">
+          <span class="title">LEVEL</span>
+          <span class="numbers">1 / 3</span>
+        </div>
+        <canvas id="gameCanvas" width="640" height="420">Jūsu pārlūks neatbalsta HTML5. Lūdzu, atjaunojiet pārlūkprogrammu.</canvas>
+      </div>
+
+      <div class="winner">
+        <img src="images/winner.png" />
+        <input class="button winner" type="button" value="Spēlēt vēl!" />
+      </div>
+      
+    </div>
+  </body>
+</html>

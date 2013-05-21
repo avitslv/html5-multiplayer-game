@@ -1,0 +1,145 @@
+/*
+ *	
+ */
+body {
+	background: #111;
+	font: 22px Arial,Tahoma;
+	color:#FFF;
+}
+img {
+	width:100%;
+	height:auto;
+}
+
+#container {
+	width: 100%;
+	height:100%;
+	max-width:640px;
+	max-height:420px;
+	margin:0px auto;
+	position: relative;
+}
+
+input.button {
+	background:none;
+	border-radius: none;
+	border:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	z-index: 9;
+	top:200px;
+	left:200px;
+	width:242px;
+	height:57px;
+	cursor: pointer;
+	background: #77c335;
+	background: -moz-linear-gradient(top,  #77c335 0%, #589d1f 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#77c335), color-stop(100%,#589d1f));
+	background: -webkit-linear-gradient(top,  #77c335 0%,#589d1f 100%);
+	background: -o-linear-gradient(top,  #77c335 0%,#589d1f 100%);
+	background: -ms-linear-gradient(top,  #77c335 0%,#589d1f 100%);
+	background: linear-gradient(to bottom,  #77c335 0%,#589d1f 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#77c335', endColorstr='#589d1f',GradientType=0 );
+	border-radius: 20px;
+	border:2px solid #4f7e22;
+	color:#FFF;
+	font-size:30px;
+}
+input.button:hover {
+	background:#77C335;
+}
+input.button.locked {
+	background:#BBB;
+	border:2px solid #AAA;
+	color:#CCC;
+}
+
+/*
+ *	Welcome screen
+ */
+div.welcome-screen {
+	display:block;
+}
+
+/*
+ *	Instructions
+ */
+div.instructions {
+	display:none;
+}
+
+/*
+ *	Lobby
+ */
+div.lobby {
+	display:none;
+}
+div.lobby div.joined {
+	position: absolute;
+	width: 100%;
+	top: 172px;
+	left: 0;
+	height: 40px;
+	text-align: center;
+	color: #453829;
+	font-size: 30px;
+	font-weight: bold;
+}
+div.lobby div.joined.not-enough {
+	color:#fa1110;
+}
+div.lobby div.joined.enough {
+	color:#449502;
+}
+div.lobby input.play {
+	display:none;
+}
+
+/*
+ *	Game itself
+ */
+div.game {
+	display:none;
+}
+
+#gameCanvas {
+	width:100%;
+	height:100%;
+	background:#FFF;
+}
+
+#debug-canvas {
+	margin-left: 20px;
+	background:#FFF;
+}
+
+.game-info {
+	position: absolute;
+	color: #333;
+	font-weight: bold;
+	top: 40px;
+	left: 40px;
+}
+.game-info .title {
+
+}
+.game-info .number {
+
+}
+
+/*
+ *	Winner
+ */
+ div.winner {
+ 	display:none;
+ }
+
+@media all and (min-width: 700px) {
+  body {
+    padding-top:20px;
+  }
+  .game-info {
+  	height:60px;
+  }
+}
